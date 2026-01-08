@@ -5,11 +5,11 @@ trending_count = 0
 
 for views in blog_views:
   
-    total_views += views
+    total_views = total_views+ views
    
     if views > 1000:
         print("Trending")
-        trending_count += 1
+        trending_count = trending_count+ 1
         
     elif views >= 500 and views <= 1000:
         print("Average")
